@@ -1,0 +1,110 @@
+{
+  "header": {
+    "title": "IRD",
+    "subtitle": "Índice de Riesgo de Disglucemia",
+    "version": "v1.0 Cuba",
+    "changeLang": "Cambiar a inglés"
+  },
+  "form": {
+    "demografia": {
+      "title": "Datos del paciente",
+      "edad": "Edad (años)",
+      "sexo": "Sexo",
+      "sexoPlaceholder": "Seleccionar",
+      "sexoM": "Masculino",
+      "sexoF": "Femenino"
+    },
+    "antropometria": {
+      "title": "Antropometría",
+      "peso": "Peso (kg)",
+      "talla": "Talla (m)",
+      "pesoPlaceholder": "Ej: 78.5",
+      "tallaPlaceholder": "Ej: 1.72",
+      "imcHint": "El IMC se calcula automáticamente: peso (kg) / talla² (m). Umbral del IRD: ≥ 27 kg/m².",
+      "imcTitulo": "IMC",
+      "imcCumple": "≥ 27 ✓",
+      "imcNoCumple": "< 27"
+    },
+    "lipidos": {
+      "title": "Triglicéridos y glucosa en ayunas",
+      "unidadLabel": "Unidad de medida:",
+      "trigliceridos": "Triglicéridos",
+      "glucemia": "Glucosa en ayunas",
+      "trigliceridosPlaceholderMgdl": "Ej: 150",
+      "glucemiaPlaceholderMgdl": "Ej: 100",
+      "trigliceridosPlaceholderMmoll": "Ej: 1.69",
+      "glucemiaPlaceholderMmoll": "Ej: 5.55",
+      "tygHint": "Fórmula: TyG = Ln [ TG × G / 2 ]. Umbral del IRD: ≥ 8,3.",
+      "tygTitulo": "TyG",
+      "tygCumple": "≥ 8.3 ✓",
+      "tygNoCumple": "< 8.3"
+    },
+    "antecedentes": {
+      "title": "Variables clínicas",
+      "hta": "Antecedente de hipertensión arterial",
+      "familiar": "Familiar de 1.er grado con diabetes",
+      "familiarDesc": "(padre, madre, hermano, hijo)"
+    },
+    "ptgo": {
+      "title": "Prueba de tolerancia a la glucosa oral (1 h)",
+      "ptgo1h": "Glucemia a 1 h (mmol/L)",
+      "ptgo2h": "Glucemia a 2 h (mmol/L) — opcional",
+      "ptgo1hPlaceholder": "Ej: 8.6",
+      "ptgo2hPlaceholder": "Ej: 7.8",
+      "referencia": "IDF (2024): IH ≥ 8,6 mmol/L (155 mg/dL); DM2 ≥ 11,6 mmol/L (209 mg/dL)."
+    },
+    "errores": {
+      "pesoMin": "Mínimo 20 kg",
+      "pesoMax": "Máximo 300 kg",
+      "tallaMin": "Mínimo 0.8 m",
+      "tallaMax": "Máximo 2.5 m",
+      "glucemiaRango": "Valor fuera de rango",
+      "trigliceridosRango": "Valor fuera de rango"
+    }
+  },
+  "result": {
+    "title": "Resultado IRD",
+    "puntaje": "Puntaje IRD",
+    "puntosMax": "puntos (máx. 12)",
+    "corte": "Punto de corte óptimo: 8 puntos",
+    "placeholder": "Introduce los datos para calcular el riesgo puntual.",
+    "esperando": "Esperando mediciones completas...",
+    "badgeBajo": "Bajo riesgo",
+    "badgeModerado": "Riesgo moderado",
+    "badgeAlto": "Alto riesgo de disglucemia",
+    "componentesTitle": "Componentes del IRD",
+    "ptgoTitle": "Estado glucémico según PTGO-1h (IDF 2024)",
+    "ptgoSinValor": "No se ingresó valor de PTGO-1h. Si el IRD es ≥ 8, se recomienda realizar la prueba.",
+    "recomendacionTitle": "Recomendación clínica",
+    "disclaimer": "Esta calculadora es una herramienta de apoyo a la decisión clínica. El diagnóstico definitivo de disglucemia o diabetes mellitus debe ser confirmado por un médico con pruebas de laboratorio estandarizadas.",
+    "tesisRef": "Véase la tesis doctoral de González Tabares (2026) y la Declaración de Posición de la IDF (2024)."
+  },
+  "recomendacion": {
+    "accionInmediata": "Acción inmediata: El paciente presenta alto riesgo por IRD (≥ 8 pts) y alteración en la PTGO-1h (≥ 8,6 mmol/L). Se recomienda derivación a Endocrinología, confirmación diagnóstica según criterios ADA/IDF e inicio de intervención de estilo de vida.",
+    "intervencion": "Intervención: Alto riesgo por IRD (≥ 8 pts) con prediabetes en PTGO-1h (≥ 8,6 mmol/L). Inicio de intervención de estilo de vida, seguimiento estrecho y considerar derivación a Endocrinología.",
+    "accion": "Acción: Alto riesgo por IRD (≥ 8 pts). Realizar PTGO-1h para completar la evaluación del estado glucémico. Si la PTGO-1h no está disponible, considerar HbA1c o PTGO-2h.",
+    "vigilancia": "Vigilancia: Riesgo moderado. Mantener controles periódicos, promover estilo de vida saludable y reevaluar en el próximo EMCS.",
+    "seguimiento": "Seguimiento rutinario: Riesgo bajo. Mantener hábitos saludables, control de peso, actividad física y reevaluar en el próximo Examen Médico de Control de Salud (EMCS)."
+  },
+  "ptgoInterpretacion": {
+    "diabetes": "Diabetes mellitus tipo 2 (≥ 11,6 mmol/L). Se recomienda repetir la prueba para confirmar.",
+    "prediabetes": "Hiperglucemia intermedia / prediabetes (≥ 8,6 mmol/L). Intervención de estilo de vida y seguimiento.",
+    "normoglucemia": "Normoglucemia (< 8,6 mmol/L). Mantener hábitos saludables y control periódico."
+  },
+  "componentes": {
+    "tyg": "TyG ≥ 8,3",
+    "imc": "IMC ≥ 27",
+    "hta": "HTA",
+    "familiar": "Familiar DM",
+    "si": "Sí",
+    "no": "No",
+    "pts": "pts"
+  },
+  "footer": {
+    "disclaimer": "Solo fines de ayuda. No sustituye criterio médico.",
+    "nota": "Esta calculadora es una herramienta de apoyo a la decisión clínica. El diagnóstico definitivo de disglucemia o diabetes mellitus debe ser confirmado por un médico con pruebas de laboratorio estandarizadas. Véase la tesis doctoral de Rubén González Tabares (2026) y la Declaración de Posición de la IDF (2024).",
+    "especialista": "Especialista en Endocrinología · Investigador del Índice de Riesgo de Disglucemia (IRD)",
+    "desarrollado": "Diseñado & Desarrollado por",
+    "derechos": "Todos los derechos reservados."
+  }
+}

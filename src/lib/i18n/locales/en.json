@@ -1,0 +1,110 @@
+{
+  "header": {
+    "title": "IRD",
+    "subtitle": "Glycemic Risk Index",
+    "version": "v1.0 Cuba",
+    "changeLang": "Cambiar a español"
+  },
+  "form": {
+    "demografia": {
+      "title": "Patient data",
+      "edad": "Age (years)",
+      "sexo": "Sex",
+      "sexoPlaceholder": "Select",
+      "sexoM": "Male",
+      "sexoF": "Female"
+    },
+    "antropometria": {
+      "title": "Anthropometry",
+      "peso": "Weight (kg)",
+      "talla": "Height (m)",
+      "pesoPlaceholder": "E.g. 78.5",
+      "tallaPlaceholder": "E.g. 1.72",
+      "imcHint": "BMI is calculated automatically: weight (kg) / height² (m). IRD threshold: ≥ 27 kg/m².",
+      "imcTitulo": "BMI",
+      "imcCumple": "≥ 27 ✓",
+      "imcNoCumple": "< 27"
+    },
+    "lipidos": {
+      "title": "Fasting triglycerides and glucose",
+      "unidadLabel": "Unit of measurement:",
+      "trigliceridos": "Triglycerides",
+      "glucemia": "Fasting glucose",
+      "trigliceridosPlaceholderMgdl": "E.g. 150",
+      "glucemiaPlaceholderMgdl": "E.g. 100",
+      "trigliceridosPlaceholderMmoll": "E.g. 1.69",
+      "glucemiaPlaceholderMmoll": "E.g. 5.55",
+      "tygHint": "Formula: TyG = Ln [ TG × G / 2 ]. IRD threshold: ≥ 8.3.",
+      "tygTitulo": "TyG",
+      "tygCumple": "≥ 8.3 ✓",
+      "tygNoCumple": "< 8.3"
+    },
+    "antecedentes": {
+      "title": "Clinical variables",
+      "hta": "History of hypertension",
+      "familiar": "First-degree relative with diabetes",
+      "familiarDesc": "(father, mother, sibling, child)"
+    },
+    "ptgo": {
+      "title": "Oral glucose tolerance test (1 h)",
+      "ptgo1h": "Glucose at 1 h (mmol/L)",
+      "ptgo2h": "Glucose at 2 h (mmol/L) — optional",
+      "ptgo1hPlaceholder": "E.g. 8.6",
+      "ptgo2hPlaceholder": "E.g. 7.8",
+      "referencia": "IDF (2024): IFG ≥ 8.6 mmol/L (155 mg/dL); DM2 ≥ 11.6 mmol/L (209 mg/dL)."
+    },
+    "errores": {
+      "pesoMin": "Minimum 20 kg",
+      "pesoMax": "Maximum 300 kg",
+      "tallaMin": "Minimum 0.8 m",
+      "tallaMax": "Maximum 2.5 m",
+      "glucemiaRango": "Value out of range",
+      "trigliceridosRango": "Value out of range"
+    }
+  },
+  "result": {
+    "title": "IRD Result",
+    "puntaje": "IRD Score",
+    "puntosMax": "points (max 12)",
+    "corte": "Optimal cutoff: 8 points",
+    "placeholder": "Enter data to calculate the risk score.",
+    "esperando": "Waiting for complete measurements...",
+    "badgeBajo": "Low risk",
+    "badgeModerado": "Moderate risk",
+    "badgeAlto": "High risk of dysglycemia",
+    "componentesTitle": "IRD Components",
+    "ptgoTitle": "Glycemic status by OGTT-1h (IDF 2024)",
+    "ptgoSinValor": "No OGTT-1h value entered. If IRD is ≥ 8, the test is recommended.",
+    "recomendacionTitle": "Clinical recommendation",
+    "disclaimer": "This calculator is a clinical decision support tool. Definitive diagnosis of dysglycemia or diabetes mellitus must be confirmed by a physician with standardized laboratory tests.",
+    "tesisRef": "See the doctoral thesis by González Tabares (2026) and the IDF Position Statement (2024)."
+  },
+  "recomendacion": {
+    "accionInmediata": "Immediate action: The patient has high IRD risk (≥ 8 pts) and altered OGTT-1h (≥ 8.6 mmol/L). Referral to Endocrinology is recommended, diagnostic confirmation per ADA/IDF criteria, and lifestyle intervention.",
+    "intervencion": "Intervention: High IRD risk (≥ 8 pts) with pre-diabetes on OGTT-1h (≥ 8.6 mmol/L). Initiate lifestyle intervention, close follow-up, and consider referral to Endocrinology.",
+    "accion": "Action: High IRD risk (≥ 8 pts). Perform OGTT-1h to complete glycemic status evaluation. If OGTT-1h is unavailable, consider HbA1c or OGTT-2h.",
+    "vigilancia": "Monitoring: Moderate risk. Maintain periodic checks, promote a healthy lifestyle, and reassess at the next health examination.",
+    "seguimiento": "Routine follow-up: Low risk. Maintain healthy habits, weight control, physical activity, and reassess at the next health examination."
+  },
+  "ptgoInterpretacion": {
+    "diabetes": "Type 2 diabetes mellitus (≥ 11.6 mmol/L). Repeat testing is recommended for confirmation.",
+    "prediabetes": "Intermediate hyperglycemia / pre-diabetes (≥ 8.6 mmol/L). Lifestyle intervention and follow-up.",
+    "normoglucemia": "Normal glucose (< 8.6 mmol/L). Maintain healthy habits and periodic monitoring."
+  },
+  "componentes": {
+    "tyg": "TyG ≥ 8.3",
+    "imc": "BMI ≥ 27",
+    "hta": "HTN",
+    "familiar": "Family DM",
+    "si": "Yes",
+    "no": "No",
+    "pts": "pts"
+  },
+  "footer": {
+    "disclaimer": "For educational purposes only. Does not replace medical judgment.",
+    "nota": "This calculator is a clinical decision support tool. Definitive diagnosis of dysglycemia or diabetes mellitus must be confirmed by a physician with standardized laboratory tests. See the doctoral thesis by Rubén González Tabares (2026) and the IDF Position Statement (2024).",
+    "especialista": "Endocrinology Specialist · Glycemic Risk Index (IRD) Researcher",
+    "desarrollado": "Designed & Developed by",
+    "derechos": "All rights reserved."
+  }
+}
